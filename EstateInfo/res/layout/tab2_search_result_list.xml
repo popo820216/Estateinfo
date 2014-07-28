@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_huise"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_result_top"
+        android:layout_alignParentTop="true"
+        layout="@layout/toptitle" />
+
+    <cn.com.example.customview.XListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_result_top"
+        android:cacheColorHint="#00000000" >
+    </cn.com.example.customview.XListView>
+
+    <TextView
+        android:id="@+id/result_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="未找到指定条件的结果"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

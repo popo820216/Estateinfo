@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_huise" >
+
+    <include
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        layout="@layout/toptitle" />
+
+    <!--
+         <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    -->
+
+    <cn.com.example.customview.XListView
+        android:id="@+id/tab3_xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@null"
+        android:scrollbars="none" >
+    </cn.com.example.customview.XListView>
+
+</RelativeLayout>
